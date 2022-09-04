@@ -1,0 +1,130 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-03T18:31:26.843Z",
+        "line": 2,
+        "name": "Search is a hotel Виктория Спа Минск",
+        "description": "",
+        "id": "booking-search;search-is-a-hotel-виктория-спа-минск",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 3,
+            "name": "Hotel for search is \"Виктория Спа Минск\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 999700,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "I navigate to www.booking.com",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999200,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "I enter a search name",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I press search button hotel",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "There is a hotel with this name",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-03T18:31:26.936Z",
+        "line": 8,
+        "name": "Check hotel rating",
+        "description": "",
+        "id": "booking-search;check-hotel-rating",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "Hotel for search is \"Виктория Спа Минск\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I navigate to www.booking.com",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I enter a search name",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 999200,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I press search button hotel",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000500,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "There are \"8.4\" results are present",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Booking search",
+    "description": "",
+    "id": "booking-search",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/bookingSearch.feature",
+    "tags": []
+  }
+]
