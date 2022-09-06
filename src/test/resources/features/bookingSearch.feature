@@ -1,13 +1,23 @@
 Feature: Booking search
-  Scenario: Search is a hotel Minsk Marriott Hotel
-    Given Hotel for search is "Minsk Marriott Hotel"
+  Background:
+    Given pre condition
+  Scenario Outline: Search is a hotel Minsk Marriott Hotel
+    Given Hotel for search is "<searchWord>"
     When I navigate to www.booking.com
     And I enter a search name
     And  I press search button hotel
     Then There is a hotel with this name
-  Scenario: Check hotel rating
-    Given Hotel for search is "Minsk Marriott Hotel"
+    Examples:
+      |searchWord|
+      |Minsk Marriott Hotel|
+      |Victoria & SPA Minsk|
+  Scenario Outline: Check hotel rating
+    Given Hotel for search is "<searchWord>"
     When I navigate to www.booking.com
     And I enter a search name
     And  I press search button hotel
-    Then There are "8.8" results are present
+    Then There are "<rating>" results are present
+    Examples:
+      |searchWord| |rating|
+      |Minsk Marriott Hotel| |8.8|
+      |Victoria & SPA Minsk| |8.4|
